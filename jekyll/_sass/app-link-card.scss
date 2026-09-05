@@ -1,0 +1,70 @@
+.appLink {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 1);
+    padding: calc(var(--spacing) * 2);
+    border-radius: 10px;
+    background-color: rgba(var(--background-paper-channel) / 1);
+    transform-origin: center;
+    transform: scale(0.95);
+    transition:
+        transform 0.5s,
+        filter 0.5s;
+
+    &:hover {
+        filter: brightness(1.25);
+        transform: scale(1);
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        background: #eee;
+
+        mask: var(--open-in-new-icon) center / contain no-repeat;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__title {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--spacing) * 1);
+    }
+
+    &__titleContent {
+        font-weight: bold;
+    }
+
+    &__thumbnail {
+        $gridSize: 64px;
+
+        background-color: #111;
+        background-image:
+            linear-gradient(rgba(255 255 255 / 0.075) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255 255 255 / 0.075) 1px, transparent 1px);
+        background-size: $gridSize $gridSize;
+
+        height: 100%;
+        padding: calc(var(--spacing) * 2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    &__thumbnailImage {
+        display: block;
+        max-width: 100%;
+        max-height: 300px;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+}

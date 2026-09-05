@@ -1,0 +1,57 @@
+---
+---
+
+@use "image-card";
+
+.imageList {
+    display: grid;
+    gap: calc(var(--spacing) * 2);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.otherMaterialLink {
+    font-size: 1.1rem;
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+.videoGallery {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 1200px) {
+    .imageList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .videoGallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .imageList {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .imageList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .videoGallery {
+        grid-template-columns: 1fr;
+    }
+}

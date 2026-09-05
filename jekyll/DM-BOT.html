@@ -1,0 +1,63 @@
+---
+title: DMBOTサーバー使い方
+layout: default
+css: DM-BOT
+favicon: https://i.imgur.com/ULFH9jZ.png
+---
+
+<h1 class="heading">{{ page.title }}</h1>
+
+<a class="link" target="_blank" rel="noopener noreferrer" href="https://discord.gg/kC2Nf6tgmd">DM用鯖</a>
+
+<section class="section">
+    <h2 class="heading">コマンド一覧</h2>
+    <ul>
+        <li>
+            <strong>AARRメンバーのみ可能:</strong><br>
+            <code>!chicken userid</code><br>
+            例：<code>!chicken 1297747558801739829</code>
+            <br>
+            <span>送信可能回数 <strong>5000</strong></span>
+        </li>
+        <li>
+            <strong>要請ロールサブスクメンバー/AARRブーストメンバーのみ可能:</strong><br>
+            <code>!chicken userid メッセージ内容 </code><br>
+            <br>
+            <span>送信可能回数 <strong>9000</strong></span>
+        </li>
+    </ul>
+    <section class="section">
+        <h3 class="heading">送信ステータスのリスト</h3>
+        <ul>
+            <li>❌ この鯖にいないか禁止されてる (AARRのdiscord鯖でLv3以上のユーザーには送れません)</li>
+            <li>⚠️ 送信中 (クールタイム)</li>
+            <li>✅ 送信成功</li>
+        </ul>
+    </section>
+    <section class="section">
+        <h2 class="heading">DM鯖用webツール</h2>
+        <a class="link" href="https://aarr-dev-page-tools.github.io/page/AARR-DM-BOT-Requester.html"
+            rel="noopener noreferrer">AARR-DM-BOT-Requester ツールページ </a>
+        <section class="section">
+            <h3 class="heading">ツール機能概要</h3>
+            <ul>
+                <li>爆鯖に参加しているユ一ザ一IDを抽出</li>
+                <li>コマンド送信機能</li>
+                <li>コマンドを送信する回数の指定が可能</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h3 class="heading">使用方法</h3>
+            <ol>
+                <li>
+                    <strong>join定期監視</strong><br>
+                    joinログを監視し、ユ一ザ一が参加したら開始
+                </li>
+                <li>
+                    <strong>参加済みユーザー検証</strong><br>
+                    参加しているユーザーをIDリストの中から確認し、そのユーザーIDに送信を開始します。
+                </li>
+            </ol>
+        </section>
+    </section>
+</section>

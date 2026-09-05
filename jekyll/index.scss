@@ -1,0 +1,49 @@
+---
+---
+
+.discordLink {
+    $color1: #5865f2;
+    $color2: #5ac8fa;
+
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, $color1, $color2, $color2, $color1);
+    transition: background-position 1s ease;
+    background-size: 300% 300%;
+    background-position: 0% 50%;
+    animation: bounce 0.5s ease 0s infinite alternate;
+    transform-origin: center;
+
+    &:hover {
+        background-position: 100% 50%;
+    }
+}
+
+.videoGallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+
+    iframe {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 600px) {
+    .videoGallery {
+        flex-direction: column;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(0.9, 0.9);
+    }
+}

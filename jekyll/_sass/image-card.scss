@@ -1,0 +1,20 @@
+.imageCard {
+    padding: calc(var(--spacing) * 2);
+    gap: calc(var(--spacing) * 1);
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(var(--background-paper-channel));
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__imageContainer {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

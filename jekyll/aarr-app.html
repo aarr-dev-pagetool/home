@@ -1,0 +1,143 @@
+---
+title: Application Command BOT
+og_type: article
+og_image: https://i.imgur.com/YpsvCuJ.png
+favicon: https://i.imgur.com/YpsvCuJ.png
+theme_color: lightblue
+layout: default
+css: DM-BOT
+---
+
+<h1 class="heading">{{ page.title }}</h1>
+
+<p class="subheading">ユーザーインストールbotの使い方</p>
+
+<p>
+    <strong>（スマホの場合は簡単なFirefox版を推奨<br>
+        ※Firefoxブラウザで行う必要有）</strong>
+</p>
+
+<ol>
+    <li>
+        <p>
+            Botを自分の垢に追加
+        </p>
+        アプリbotリンクはdiscord内に記載
+        <br>
+        <br>
+        <a class="link" href="https://discord.gg/DPmPdpcNqs" target="_blank" rel="noopener noreferrer">
+            AARR discord
+        </a>
+        <p>
+            <img src="https://i.imgur.com/pfmdUPY.png" alt="base62設定画面"
+                style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); margin:20px 0;">
+        </p>
+        <br><br><br>
+    </li>
+
+    <li>
+        <p>
+            ランダムメンション用のUSER ID取得拡張機能
+        </p>
+        <br><br>
+        <a class="link" href="https://addons.mozilla.org/ja/firefox/addon/aarr-discord-multi-tools/" target="_blank"
+            rel="noopener noreferrer">
+            🔗Firefox版
+        </a>
+        <br><br><br>
+    </li>
+
+    <li>
+        ページをリロードし、拡張機能が正しく反映されていることを確認
+    </li>
+    <br><br>
+    <li>
+        UIDを取得してコピー（formatはカンマ、改行両方可）
+    </li>
+
+    <p>
+        <img src="https://i.imgur.com/iaekL7i.png" alt="base62設定画面"
+            style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); margin:20px 0;">
+    </p>
+    <br><br>
+    <li>
+        スラッシュコマンド形式で"random＿mention＿uids"を選択しコピーしたIDをBotに入力<br>
+        注意：IDが多すぎるとdiscordの文字数制限にかかる為コマンドに入力できない場合があります<br><br>
+        スマホの場合は ブラウザの設定 > PC版サイトで開く を行わないとアプリコマンドが表示されない可能性があります
+    </li>
+    <br><br>
+    <p>
+        <img src="https://i.imgur.com/pAzJwgN.png" alt="base62設定画面"
+            style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); margin:20px 0;">
+    </p>
+
+    <li>
+        コマンドを使用すると自分だけに表示されるパネルが出てくるのでボタンを連打して荒らしが可能<br><br>
+        注意：送信するメッセージも"自分だけに表示されています"になってる場合auto modや低速モードに弾かれてる可能性があります
+    </li>
+    <br><br>
+    <li>
+        <a class="link" href="https://www.opautoclicker.com/" target="_blank" rel="noopener noreferrer">
+            🔗auto clicker(外部製)
+        </a>
+        <a>
+            を使用すると連打が簡単に出来ます
+        </a>
+    </li>
+</ol>
+
+<hr class="divider">
+
+<h2 class="heading">base62化ユーザーIDを使用する場合（対大規模鯖用）</h2>
+
+
+
+<ol>
+    <li>拡張機能の「コピー形式」で <strong>base62</strong> を選択</li>
+
+    <p>
+        <img src="https://i.imgur.com/98HTIBO.png" alt="base62設定画面"
+            style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); margin:20px 0;">
+    </p>
+
+    <li>取得したユーザーIDをすべてコピー</li>
+    <li>Botのスラッシュコマンドで"random＿mention＿base62"を選択し、入力欄の形式を <strong>base62</strong> に変更</li>
+    <p>
+        <img src="https://i.imgur.com/AvRbQ5U.png" alt="base62設定画面"
+            style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); margin:20px 0;">
+    </p>
+
+    <li>コピーしたbase62文字列をそのまま貼り付け</li>
+
+    <p style="color:#ffaaaa; font-weight:bold;">
+        BOTが自動的にbase52化IDを復元し通常通りのランダムメンションになります
+    </p>
+    <p>
+        <img src="https://i.imgur.com/N9PsVRV.png" alt="base62設定画面"
+            style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); margin:20px 0;">
+    </p>
+
+</ol>
+
+
+
+<h3 style="color:#00bfff; margin-top:30px;">base62化ユーザーIDを使用する場面</h3>
+
+
+<li>通常のユーザーID（例: 123456789012345678）を base62化すると大幅に短くなり、アプリのID入力欄により多くIDを入れる事が出来る為、大規模鯖でもランダムメンションが行えますます<br>
+
+
+
+
+    </article>
+    <section>
+
+        <p>
+            解説動画：
+        </p>
+        <a href="https://imgur.com/a/dNW15ZG" target="_blank" rel="noopener noreferrer">
+            <blockquote class="imgur-embed-pub" lang="en" data-id="a/dNW15ZG" data-context="false"><a
+                    href="//imgur.com/a/dNW15ZG"></a></blockquote>
+            <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+        </a>
+    </section>

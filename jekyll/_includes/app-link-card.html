@@ -1,0 +1,16 @@
+<a class="appLink" href="{{ include.href }}" target="_blank" rel="noopener noreferrer">
+    <span class="appLink__top">
+        <span class="appLink__title">
+            <span class="appLink__titleContent">{{ include.title }}</span>
+            <span>{{ include.description }}</span>
+        </span>
+        <span class="appLink__icon"></span>
+    </span>
+    {% if include.thumbnail %}
+    <span class="appLink__thumbnail">
+        <img alt="{{ include.thumbnail_alt }}"" width=" {{ include.thumbnail_width }}"
+            height="{{ include.thumbnail_height }}" decoding="async" loading="lazy" class="appLink__thumbnailImage"
+            src="{{ include.thumbnail }}">
+    </span>
+    {% endif %}
+</a>

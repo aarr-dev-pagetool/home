@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta property="og:site_name" content="AARR">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="{{ page.og_type }}">
+
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="AARR">
+    <meta property="og:description" content="AARR">
+    {% endif %}
+
+    {% if page.og_image %}
+    <meta property="og:image" content="{{ page.og_image }}">
+    {% else %}
+    <meta property="og:image" content="https://i.imgur.com/0uXXNwP.png">
+    {% endif %}
+
+    <title>{{ page.title }} - AARR Dev</title>
+
+    {% if page.theme_color %}
+    <meta name="theme-color" content="{{ page.theme_color }}">
+    {% else %}
+    <meta name="theme-color" content="#a9ceec">
+    {% endif %}
+
+    {% if page.favicon %}
+    <link rel="icon" type="image/png" href="{{ page.favicon }}">
+    {% else %}
+    <link rel="icon" type="image/png" href="{{ '/assets/img/icon.png' | relative_url }}">
+    {% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kiso.css@latest/kiso.css">
+    <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/default.css' | relative_url }}">
+
+    {% if page.css %}
+    <link rel="stylesheet" href="{{ page.css | append: '.css' | relative_url }}">
+    {% endif %}
+</head>
+
+<body>
+    <div class="root">
+        <header class="header">
+            <a class="header__logo" href="{{ '/' | relative_url }}">AARR Dev</a>
+            <nav class="header__nav">
+                <a class="header__navLink" href="{{ '/' | relative_url }}">TOP</a>
+                <a class="header__navLink" href="{{ '/about2' | relative_url }}">画像素材</a>
+                <a class="header__navLink" href="{{ '/about3' | relative_url }}">運用思想</a>
+                <a class="header__navLink" href="{{ '/about5' | relative_url }}">webツール</a>
+                <a class="header__navLink" href="{{ '/aarrtool' | relative_url }}">拡張機能</a>
+                <a class="header__navLink" href="{{ '/about7' | relative_url }}">サイト利用規約</a>
+                <a class="header__navLink" href="{{ '/LICENSE' | relative_url }}">LICENSE</a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="content__paper">{{ content }}</div>
+        </div>
+        <footer class="footer">
+            <a class="footer__copyright" href="{{ '/LICENSE' | relative_url }}">&copy; 2025 AARR</a>
+            <hr class="footer__divider">
+            <a class="footer__discord" target="_blank" rel="noopener noreferrer"
+                href="https://discord.gg/DPmPdpcNqs">Discord</a>
+        </footer>
+    </div>
+</body>
+
+</html>

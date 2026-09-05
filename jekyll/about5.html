@@ -1,0 +1,131 @@
+---
+title: webツール/BOT
+description: WebツールとBotの一覧
+og_type: article
+layout: default
+css: about5
+---
+
+<h1 class="heading">{{ page.title }}</h1>
+
+<div class="appList">
+    {% assign aarrappurl = '/aarr-app' | relative_url %}
+    {% include app-link-card.html
+    title="アプリコマンドbot"
+    description="コマンド用アプリケーション"
+    href=aarrappurl
+    thumbnail="https://i.imgur.com/RS8poGP.png"
+    thumbnail_alt="Discordコマンドアプリの画面"
+    thumbnail_width="440"
+    thumbnail_height="603"
+    %}
+
+    {% include app-link-card.html
+    title="Tメッセージツール"
+    description="aarrtool"
+    href="https://aarr-dev-page-tools.github.io/page/aboutweb.html"
+    thumbnail="https://i.imgur.com/gmaFhwB.png"
+    thumbnail_alt="tokenツールの画面"
+    thumbnail_width="1444"
+    thumbnail_height="760"
+    %}
+
+    {% include app-link-card.html
+    title="グループDMツール"
+    description="aarrdm"
+    href="https://aarr-dev-page-tools.github.io/page/aboutDM.html"
+    thumbnail="https://i.imgur.com/gmaFhwB.png"
+    thumbnail_alt="サイトの画像"
+    thumbnail_width="1444"
+    thumbnail_height="760"
+    %}
+
+    {% include app-link-card.html
+    title="webhookツール"
+    description="aarr webhooker"
+    href="https://aarr-dev-page-tools.github.io/page/aboutwebhook.html"
+    thumbnail="https://i.imgur.com/PDnpYsh.png"
+    thumbnail_alt="サイトの画像"
+    thumbnail_width="1445"
+    thumbnail_height="800"
+    %}
+
+    {% include app-link-card.html
+    title="T生存確認ツール"
+    description="check alive"
+    href="https://aarr-dev-page-tools.github.io/page/CheckAlive.html"
+    thumbnail="https://i.imgur.com/PQQylN4.png"
+    thumbnail_alt="サイトの画像"
+    thumbnail_width="1444"
+    thumbnail_height="785"
+    %}
+
+    {% assign dmboturl = '/DM-BOT' | relative_url %}
+    {% include app-link-card.html
+    title="BOTサーバー"
+    description="DMbotサーバー"
+    href=dmboturl
+    thumbnail="https://i.imgur.com/O5MiOFR.png"
+    thumbnail_alt="DMbot関連ツール"
+    thumbnail_width="484"
+    thumbnail_height="303"
+    %}
+
+    {% include app-link-card.html
+    title="BOTサーバー"
+    description="DM BOT自動コマンド要請ツール"
+    href="https://aarr-dev-page-tools.github.io/page/AARR-DM-BOT-Requester.html"
+    thumbnail="https://i.imgur.com/O5MiOFR.png"
+    thumbnail_alt="DMbot関連ツール"
+    thumbnail_width="484"
+    thumbnail_height="303"
+    %}
+
+    {% assign nukeboturl = '/nukebot' | relative_url %}
+    {% include app-link-card.html
+    title="BOT"
+    description="nuke bot"
+    href=nukeboturl
+    thumbnail="https://i.imgur.com/54pbKBq.png"
+    thumbnail_alt="nuke botの画像"
+    thumbnail_width="339"
+    thumbnail_height="265"
+    %}
+
+    {% include app-link-card.html
+    title="フレーム作成ツール"
+    description="aarrize"
+    href="https://aarr-developer.github.io/aarrize/"
+    thumbnail="https://i.imgur.com/b0QTSKg.png"
+    thumbnail_alt="aarrizeフレーム作成画面"
+    thumbnail_width="1344"
+    thumbnail_height="648"
+    %}
+
+    {% include app-link-card.html
+    title="ポリゴンGIF作成ツール"
+    description="AARR polygon shock gif generator"
+    href="https://aarr-developer.github.io/pakapaka-gif/"
+    thumbnail="https://i.imgur.com/lcRzDYt.png"
+    thumbnail_alt="作成画面"
+    thumbnail_width="1228"
+    thumbnail_height="894"
+    %}
+
+    {% include app-link-card.html
+    title="GitHub Organizations"
+    description="AARR-developer(GitHub)"
+    href="https://github.com/orgs/AARR-developer/repositories"
+    thumbnail="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+    thumbnail_alt="GitHubロゴ"
+    thumbnail_width="512"
+    thumbnail_height="512"
+    %}
+
+    {% assign aarrtoolurl = '/aarrtool' | relative_url %}
+    {% include app-link-card.html
+    title="拡張機能"
+    description="拡張機能はこちら"
+    href=aarrtoolurl
+    %}
+</div>
