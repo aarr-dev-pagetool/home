@@ -8,6 +8,8 @@
     <meta property="og:site_name" content="AARR">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:type" content="{{ page.og_type }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
