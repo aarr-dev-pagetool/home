@@ -47,7 +47,7 @@ jobs:
         env:
           URL: "https://${{ github.repository_owner }}.github.io"
         run: |
-          echo "url: '$URL'" >> _config.yml
+          echo "url: '$URL'" >> jekyll/_config.yml
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --source jekyll --baseurl "$BASE_PATH"
