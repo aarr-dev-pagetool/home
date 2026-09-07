@@ -10,9 +10,6 @@ body {
     color: #fff;
     line-height: 1.6;
     font-family: Montserrat, "LINE Seed JP", Arial, sans-serif;
-    background-image: url("{{ '/assets/img/background.png' | relative_url }}");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("{{ '/assets/img/background.png' | relative_url }}") center/cover no-repeat #ff8713;
     font-weight: 400;
 }
