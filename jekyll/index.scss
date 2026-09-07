@@ -28,13 +28,20 @@
     justify-content: space-around;
 
     iframe {
+        flex: 1 1 0;
+        min-width: 0;
         aspect-ratio: 16 / 9;
+        height: auto;
     }
 }
 
 @media (max-width: 600px) {
     .videoGallery {
         flex-direction: column;
+
+        iframe {
+            width: 100%;
+        }
     }
 }
 
